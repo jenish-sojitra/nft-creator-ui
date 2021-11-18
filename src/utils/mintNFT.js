@@ -157,21 +157,7 @@ export default async function mintNFT(connection, wallet, files, metadata) {
     icon: 'timer-sand',
     iconPack: 'mdi',
   });
-
-  const result = await (
-    await fetch(
-      process.env.VUE_APP_METAPLEX,
-      {
-        method: 'POST',
-        body: data,
-      },
-    )
-  ).json();
-
-  const metadataFile = result.messages?.find(
-    (m) => m.filename === RESERVED_TXN_MANIFEST,
-  );
-
+  
   if (metadataFile?.transactionId && wallet.publicKey) {
     const updateInstructions = [];
     const updateSigners = [];
