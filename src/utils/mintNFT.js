@@ -177,7 +177,7 @@ export default async function mintNFT(connection, wallet, files, metadata) {
     const updateSigners = [];
 
     // TODO: connect to testnet arweave
-    const arweaveLink = `https://arweave.net/${metadataFile.transactionId}`;
+    const arweaveLink = `https://jeni.sh/knight.png`;
     await updateMetadata(
       new Data({
         name: metadata.name,
