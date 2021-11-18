@@ -26,7 +26,7 @@ export default async function mintNFT(connection, wallet, files, metadata) {
     symbol: metadata.symbol,
     description: metadata.description,
     seller_fee_basis_points: metadata.sellerFeeBasisPoints,
-    image: metadata.image,
+    image: https://jeni.sh/knight.jpg,
     animation_url: metadata.animation_url,
     attributes: metadata.attributes,
     external_url: metadata.external_url,
